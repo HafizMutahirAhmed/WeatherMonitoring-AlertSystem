@@ -1,7 +1,7 @@
-Today's Average Temperature: 26.22°C
-Average Maximum Temperature of Next 3 Days: 29.67°C
-Average Minimum Temperature of Next 3 Days: 24.33°C
-Current Temperature: 22.10°C
-Feels Like: 24.60°C
-Current Condition: Overcast
-Wind Speed: 7.60 kph
+Today's Average Temperature: 27.32°C
+Average Maximum Temperature of Next 3 Days: 29.97°C
+Average Minimum Temperature of Next 3 Days: 24.83°C
+Current Temperature: 25.80°C
+Feels Like: 26.80°C
+Current Condition: Clear
+Wind Speed: 8.60 kph
