@@ -1,63 +1,79 @@
-# Environmental Monitoring System  
+# 🌍 Environmental Monitoring System
 
-## **Overview**  
-This project is an integrated environmental monitoring system developed in C. 
-It interacts with a free API to retrieve real-time environmental data, processes the data, and provides alerts when critical threshold is exceeded. 
-The system is automated using shell scripts and utilizes modular programming techniques to ensure maintainability and efficiency.
-
-## **Project Team**  
-- MUTAHIR AHMED  
-- AMNA AHMED  
-- ABEER KHAN  
-
-## **Features**  
-- Real-time data retrieval using HTTP requests to interact with an API.  
-- Storage of raw JSON data and processed metrics in organized files.  
-- Real-time notifications and email alerts for critical environmental conditions.  
-- Automation of data retrieval, processing, and reporting using shell scripts.  
-- Modularized code using header files for better readability and maintainability.  
-- Efficient data handling with pointers and dynamic memory allocation.  
-
-## **System Components**  
-
-### **1. API Interaction**  
-- Fetches real-time environmental data such as temperature and humidity in JSON format using HTTP requests.  
-- Parses and extracts relevant parameters for further processing.
-
-### **2. Data Storage**  
-- Raw API data is stored in JSON files.  
-- Processed data (e.g., averages, critical values) is saved in `.txt` files for easy readability.
-
-### **3. Alert System**  
-- Generates real-time system notifications when thresholds are crossed.  
-- Sends automated email alerts to relevant personnel for critical environmental readings.
-
-### **4. Automation**  
-- Shell scripts automate periodic data retrieval, processing, and report generation, ensuring seamless monitoring without manual intervention.
-
-### **5. Code Structure**  
-- Modularized using header files to organize core functionalities: API interaction, data processing, and alert handling.  
-- Pointers and dynamic memory allocation optimize memory usage for large datasets.
+This project is a modular **Environmental Monitoring System** written in **C** that retrieves, processes, and monitors real-time environmental data such as **temperature** and **humidity** using a public API. It features automated data handling, efficient storage, and an alert mechanism implemented through **Linux shell scripting**.
 
 ---
 
-## **reqirements**  
-1. Linux operating system.  
-2. GCC compiler for C programming.  
-3. `curl` library installed for HTTP requests.  
-4. Internet access for API interaction.
+## 🚀 Features
 
-## **Results**  
+- 🔄 Real-time data retrieval using HTTP requests (`libcurl`)
+- 📁 Storage of raw JSON and processed metrics in structured files
+- 🔔 Real-time system notifications and email alerts for threshold breaches
+- 📜 Linux shell scripts for automation and alert handling
+- 🔧 Modular codebase using header files and structured C programming
+- 🧠 Dynamic memory allocation for efficient data processing
 
-- **Accurate Real-Time Monitoring:**  
-  The system successfully retrieves and monitors environmental parameters such as temperature and humidity in real-time.  
+---
 
-- **User-Friendly Display:**  
-  Processed data is displayed in an easily readable format, with raw data stored for reference and analysis.  
+## 🧩 System Components
 
-- **Reliable Alerts and Notifications:**  
-  The alert system promptly generates real-time notifications and email alerts when critical thresholds are exceeded.  
+### 1. 🌐 API Interaction
 
-- **Efficient Data Handling and Storage:**  
-  The program efficiently handles large datasets using dynamic memory allocation and ensures scalability by organizing raw and processed data effectively.  
+- Retrieves environmental data (e.g., temperature, humidity) via **HTTP GET** requests.
+- Utilizes `curl` to download JSON responses from a public API.
+- Parses JSON to extract key parameters for further analysis.
+
+### 2. 🗃️ Data Storage
+
+- **Raw Data:** Stored as `.json` files for reference.
+- **Processed Data:** Metrics like averages and threshold events are logged into `.txt` reports.
+
+### 3. ⚠️ Alert System
+
+- **Real-time notifications** implemented via **Linux shell scripts** (`notify-send` or similar).
+- **Automated email alerts** are triggered when critical thresholds are exceeded (e.g., high temperature).
+- Notifications are customizable for various environmental conditions.
+
+### 4. 🔄 Automation
+
+- Shell scripts automate:
+  - Periodic API calls
+  - Data parsing and logging
+  - Notification and email dispatch
+- Enables continuous, unattended monitoring.
+
+### 5. 🧱 Code Structure
+
+- **Modular design** using C header files to separate concerns:
+  - API interaction
+  - Data processing
+  - Alert handling
+- **Pointers** and **dynamic memory** used to efficiently manage large datasets.
+
+---
+
+## 💻 Requirements
+
+- 🐧 Linux OS (tested on Ubuntu)
+- ⚙️ GCC (GNU Compiler Collection)
+- 🌐 Internet connection (for API access)
+- 📦 `libcurl` installed (`sudo apt install libcurl4-openssl-dev`)
+- 📬 `mailutils` or equivalent for email alerts
+- 📢 `libnotify` or `zenity` for desktop notifications (optional)
+
+---
+
+## ✅ Results
+
+- 📡 **Accurate Real-Time Monitoring**  
+  Successfully tracks key environmental metrics and adapts in real time.
+
+- 📊 **User-Friendly Display**  
+  Presents both raw and processed data in clear, accessible formats.
+
+- 🔔 **Reliable Alerts**  
+  Immediate desktop notifications and email alerts enhance system responsiveness.
+
+- 💾 **Efficient Storage & Memory Handling**  
+  Smart use of memory and structured storage ensures the system remains scalable and performant.
 
